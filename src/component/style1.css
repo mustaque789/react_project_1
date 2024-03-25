@@ -1,0 +1,19 @@
+.main{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto, auto;
+}
+.but1{
+    margin:20px;
+    padding:10px;
+    color: red;
+    background-color: aquamarine;
+}
+
+.but2{
+    margin:20px;
+    padding:10px;
+    color: rgb(24, 24, 2);
+    background-color: aquamarine;
+}

@@ -4,14 +4,11 @@ import Menu from './menuApi'
 import MenuCard from "./MenuCard";
 import Navbar from "./Navbar";
 
-
 const uniqueList = [... new Set(Menu.map((curElem)=>{   // this state contains "allCategoryArrayData" which is passed as prop to Navbar
     return curElem.category
 })),
 "All",
 ]
-
-console.log(uniqueList)
 
 const Restaurant = () => {
 
@@ -24,14 +21,12 @@ const Restaurant = () => {
           setMenuData(Menu)
           return;
         }
-
          const updatedList = Menu.filter((curElem)=>{    // this "updatedList" contains FilteredArrayData according to the Category
              return curElem.category=== category
          })
 
          setMenuData(updatedList)
     }
- 
   return (
     <>
       <Navbar filterItem={filterItem} menuList={menuList}/>

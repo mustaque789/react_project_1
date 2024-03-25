@@ -8,8 +8,7 @@ const MenuCard = ({ menuData }) => {
       {menuData.map((curElem) => {
 
          const {id, name, category, image, description}= curElem;
-
-        return (
+         return (   // this return is of "Map" method
           <div className="card-container" key={id}>
             <div className="card">
               <div className="card-body">
